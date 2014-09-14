@@ -1,15 +1,29 @@
 
-$document.ready(function(){
+
+// prepare it with jquery
+$(document).ready(
+	function(pie){
+
 //in this box, when I hover over a div
-$('.highlightBox div').hover(
-function() {
+$('.highlightBox > div> div').hover(
+  function() {
 
-//it will give this div an additional class
-$(this).addClass("highlight");
-}, function() {
+// add the highlight class
+    $(this).addClass('highlight');
+  }, function() {
 
-//then take the class away
-	$(this).removeClass('highlight');
-	}
-)
+// then leave it
+
+
+    // $(this).removeClass('highlight');
+
+$('#resetBut').click(
+	function(){
+		$("div").removeClass('highlight');
+	})
 })
+return console.log(pie)
+});
+
+
+

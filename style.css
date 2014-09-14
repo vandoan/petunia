@@ -2,29 +2,56 @@
 
 
 .row2{
-	background-color:red;
-	display:inline-block;
+/*	background-color:red;
+*/	display:inline-block;
 	
 }
 
 .row2 div{
 	display:inline-block;
-	background-color:red;
-}
+/*	background-color:red;
+*/}
 
 
 .row div {
 	display:inline-block;
-width:1em;
-height:1em;	
+width:4em;
+height:4em;	
 }
 
 .row2  div {
-	width:1em; 
-	height:1em;
+	width:4em; 
+	height:4em;
 }
 
 .highlight {
 	background-color:blue;
 }
+
+.but {
+	border-radius: 5px; 
+	background-color:green;
+	width:6em;
+	height:2em;
+	
+}
+
+.but:hover {
+	cursor:pointer;
+	width:7em; 
+	opacity:.7;
+	height:3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 

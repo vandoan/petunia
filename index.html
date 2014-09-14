@@ -9,16 +9,11 @@
        <link rel="stylesheet" type="text/css" href="style.css">
 
     </head>
-    <body class="highlightBox">
+    <body class="highlightBox" id="reset">
 
+        <p id="button" class=" but" onclick="myFunction()"> Change color </p> 
 
-    	<div class="row"> 
-        	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-    	</div>
-
-    	<div class="row2"> 
-        	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-    	</div>
+         <input type="button" id="resetBut"  value="Reset"> 
 
     	<div class="row"> 
         	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
@@ -76,11 +71,32 @@
         	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
     	</div>
 
+    	<div class="row"> 
+        	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    	</div>
+
+    	<div class="row2"> 
+        	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    	</div>
 
 
+        <script type="text/javascript"> 
+        function myFunction() {
+            document.getElementById("reset").style.color="red"; 
+        }
+        
+        </script>
 
+
+        <script type="text/javascript">
+        function resetForm() {
+            document.getElementById("reset").reset();
+        }
+        </script>
+
+        <script type="text/javascript" src=jquery.1.11.js></script>
          <script type="text/javascript" src=js.js> </script>
-       <script type="text/javascript" src=jquery.1.11.js></script>
+         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
        
 
     </body>
