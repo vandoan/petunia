@@ -2,10 +2,11 @@
 
 // prepare it with jquery
 $(document).ready(
+
 	function(pie){
 
 //in this box, when I hover over a div
-$('.highlightBox > div> div').hover(
+$("#board > div > div").hover(
   function() {
 
 // add the highlight class
@@ -14,14 +15,48 @@ $('.highlightBox > div> div').hover(
 
 // then leave it
 
-
+//     -------      hover effect     --------
     // $(this).removeClass('highlight');
+// })
 
-$('#resetBut').click(
+
+
+
+//   -------    click to remove highligh class on all div -----
+
+
+ // $('#reset').click(
+ // 	function(){
+ // 		$('div').removeClass('highlight');
+ // 	})
+
+//    --------        code to delete all divs -------
+
+$('#reset').click(
 	function(){
-		$("div").removeClass('highlight');
-	})
-})
+		var el = document.getElementById('board')
+		el.parentNode.removeChild(el);
+
+		
+		})
+}), 
+		 function promptMessage() { 
+	 		var boxNumber = prompt("How many boxes would you like?", "Don't go crazy"); 
+				if (boxNumber != null){
+					document.getElementById("bread").innerHTML = 
+					boxNumber + " box(es)!";
+				}
+
+				else {
+					alert("You did not specify a number");
+				}
+				}
+
+
+
+
+
+
 return console.log(pie)
 });
 
